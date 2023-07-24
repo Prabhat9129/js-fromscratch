@@ -18,6 +18,14 @@ Undefined => Empty value.
 Null => Assign null/empty value, Standalone value.
 Symbol => ES(2015) value is unique and cannot be changed.
 BigInt => ES(2020) Larger integers.
+
+non primitive datatype are like 
+object
+Array
+RegExp
+
+In javascript value have type not variable have.
+javascript is Dynamic typed language.
 */
 console.log(typeof age) //Number.
 console.log(typeof undefined) //undefined.
