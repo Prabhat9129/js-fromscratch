@@ -70,3 +70,31 @@ console.log(a.repeat(4.5));      //=>"prabhatprabhatprabhatprabhat" consider as 
 console.log(a.replace('bhat','shant'))   //=>prashant
 console.log(gameName.replace('-','='));  //=>The first react app is app todo=App-prabhat and app1 app2
 console.log(gameName.replaceAll('-','=')); //=>The first react app is app todo=App=prabhat and app1 app2
+
+console.log(gameName.search('app'));  //=>16
+console.log(gameName);
+console.log(gameName.slice(44));      //=> and app1 app2
+console.log(gameName.slice(23,44));   //=> app todo-App-prabhat
+console.log(gameName.slice(-4));      //=> app2
+console.log(gameName.slice(-9,-4));   //=> app1
+console.log(gameName.slice(57));      //=> ""
+console.log(gameName.split(' '));     //=> ['The','first','react','app','is','app','todo-App-prabhat','and','app1','app2']
+
+console.log(gameName.split(' ',22));
+console.log(gameName.startsWith('The'));  //=> true
+console.log(gameName.startsWith('The',3));//=> false
+
+console.log(gameName.substring(27));      //=> todo-App-prabhat and app1 app2
+console.log(gameName.substring(27,43));   //=> todo-App-prabhat
+console.log(c.toLocaleLowerCase());       //=> prabhat
+console.log(c.toLocaleLowerCase("en-us"));//=> prabhat
+console.log(b.toLocaleUpperCase());       //=> PRABHAT
+console.log(b.toLocaleUpperCase("en-US"));//=> PRABHAT
+console.log(gameName.toString());         //=> The first react app is app todo-App-prabhat and app1 app2 , convert object into string.
+
+console.log(c.toLowerCase());     //=> prabhat, without modifying original string
+console.log(b.toUpperCase());     //=> PRABHAT, without modifying original string
+console.log(firstName.trim());    //=> prabhat, without modifiying original string 
+console.log(firstName.trimEnd()); //=>" prabhat", without modifying original string
+console.log(firstName.trimStart());//=>"prabhat ",without modifying original string
+console.log(gameName.valueOf());   //=>return primitive value of given object
